@@ -108,6 +108,13 @@ export class Service{
             return false
         }
     }
+    getFilePreview(fileId){  
+         return this.bucket.getFilePreview(
+            conf.appwriteBuckedId,
+            fileId
+            )
+    }
+
 
 }
 
